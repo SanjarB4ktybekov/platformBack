@@ -201,7 +201,7 @@ namespace OnlinePlatformBack.Controllers
                 return BadRequest("Нет курс айди");
             }
             var tests = db.Tests.Where(t => t.CourseId == index);
-            return Ok(tests);
+            return Ok(tests);           
         }
     };
 }

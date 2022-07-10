@@ -10,7 +10,6 @@ using OnlinePlatformBack.Models;
 
 namespace OnlinePlatformBack.Controllers
 {
-
     [ApiController]
     [Route("[controller]")]
     [Produces("application/json")]
