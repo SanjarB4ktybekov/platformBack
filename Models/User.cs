@@ -10,6 +10,7 @@ namespace OnlinePlatformBack.Models
         public string Password{get;set;}
         public string Token{get;set;}
         public virtual List<Course> Courses{get;set;} = new();
+        public virtual List<ResultToDb> Results{get;set;} = new();
         public User(string name, string password, ICollection<Course> courses = null)
         {
             Name = name;
@@ -28,6 +29,11 @@ namespace OnlinePlatformBack.Models
         public void AddCourse(Course course)
         {
             Courses.Add(course);
+        }
+
+        public void AddResult(ResultToDb res)
+        {
+            Results.Add(res);
         }
     }
 }
